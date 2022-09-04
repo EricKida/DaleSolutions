@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Dale - Suporte</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+  </head>
+  <body class="">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<!-- NAVBAR/INÍCIO -->
+    <header class="bg-light p-4 shadow">
+      <div class="container col-md-12">
+        <center>
+          <a href="index.html" class="">
+            <img src="img/logo_dale3.png" width="120">
+          </a>
+        </center>
+        </div>
+        <div class="container col-md-12 box">
+          <b>
+            <ul class="nav nav-pills">
+              <li class="nav-item m-1"><a href="index.html" class="nav-link bg-navbar-dale1" aria-current="page">Home</a></li>
+              <li class="nav-item m-1"><a href="about.html" class="nav-link bg-navbar-dale1">Sobre</a></li>
+              <li class="nav-item m-1"><a href="partners.html" class="nav-link bg-navbar-dale1">Parceiros</a></li>
+              <li class="nav-item m-1"><a href="contact.html" class="nav-link bg-navbar-dale2">Contato</a></li>
+            </ul>
+          </b>
+        </div>
+      </div>
+    </header>
+<!-- NAVBAR/FIM -->
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6 text-align-contact">
+      <h1 class="display-6 fw-bold lh-1 mb-3">Mande sua questão🤔</h1>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <div>
+          <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+          <form class="row g-1" action="">
+            <div class="col-md-6">
+              <label for="validationServer01" class="form-label">Nome</label>
+              <input type="text" class="form-control" required placeholder="Seu nome" id="name">
+            </div>
+            <div class="col-md-6 pb-2">
+              <label for="validationServer02" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" required placeholder="Seu sobrenome" id="lastname">   
+            </div>
+            <div class="col-md-12 pb-2">
+              <label for="validationServer02" class="form-label">E-mail</label>
+              <input type="email" class="form-control" required placeholder="Seu e-mail" id="emailInput">
+            </div>
+            <div class="col-md-12 pb-2">
+              <label for="validationServer02" class="form-label">Assunto</label>
+              <input type="text" class="form-control" required placeholder="Limite de 50 caracterers" maxlength="50" id="subject">
+            </div>
+            <div class="col-md-12 pb-2">
+              <label for="validationServer02" class="form-label">Sua mensagem</label>
+              <textarea class="form-control" aria-label="With textarea" placeholder="Digite sua dúvida aqui" id="question"></textarea>
+            </div>
+            <div class="col-8 display-7">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" required id="checkTermos">
+                <label class="form-check-label" for="invalidCheck3">
+                  Aceito os <a type="button" data-bs-toggle="modal" data-bs-target="#termos" class="text-link">Termos</a>
+                </label>
+              </div>
+            </div>
+            <div class="col-4">
+              <input class="btn btn-primary btn-size "type="submit" value="Enviar" />
+            </div>
+          </form>
+          </div></div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-6 fw-bold lh-1 mb-5">Entre em contato conosco!</h1>
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="mb-2">
+          <h2>Telefone SAC <b><d id="availability"></d></b></h2>
+          <p class="leads">Segunda à Sexta das 8:00 às 18:00<br>
+            Horário de Brasília<br>
+            Exceto finais de semana e feriados, em Praia Grande-SP<br>
+            <d class="text-link" onclick="numberCopy()" style="cursor: pointer;" id="numberText" title="Clique para copiar o número">(13) 3477-2020</d></p>
+            <d id="notificationNumber"></d>
+            <d class="text-light" id="number" style="font-size: 0px">1334772020</d>
+            <d id="diaSemana"></d>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-envelope"></i>
+        </div>
+        <div>
+          <h2>E-mail de contato</h2>
+          <p class="leads">Você também pode entrar em contato pelo e-mail:<br><d class="text-link" onclick="emailCopy()" style="cursor: pointer;" id="email" title="Clique para copiar o E-mail">dale.suporte@gmail.com</d></p>
+          <d id="notificationEmail"></d>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER/INÍCIO -->
+    <div class="bg-dark2">
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 ">
+          <div class="col mb-3 ">
+            <a href="index.html" class="box">
+              <img src="img/logo_dale3.png" width="125" alt="">
+            </a>
+            <p class="text-secondary box" style="margin-top: -30px;">&reg<d id="year"></d></p>
+          </div>
+
+          <div class="col mb-3"></div>
+
+          <div class="col mb-lg-3">
+            <h6 class="text-secondary box">INSTITUIÇÃO</h6>
+            <center>
+              <ul class="nav flex-column col-5 align">
+                <li class="nav-item mb-2"><a href="services.html" class="nav-link p-0 text-light dl-animation-footer ">Serviços</a></li>
+                <li class="nav-item mb-2"><a href="security.html" class="nav-link p-0 text-light dl-animation-footer ">Segurança</a></li>
+              </ul>
+            </center>
+          </div>
+
+          <div class="col mb-3">
+            <h6 class="text-secondary box">PARCEIROS</h6>
+            <center>
+              <ul class="nav flex-column col-5 align">
+                <li class="nav-item mb-2"><a href="https://www.gigabyte.com/br"    target="_blank" class="nav-link p-0 text-light dl-animation-footer ">Gigabyte</a></li>
+                <li class="nav-item mb-2"><a href="https://www.gamemax-br.com"     target="_blank"class="nav-link p-0 text-light dl-animation-footer ">Gamemax</a></li>
+                <li class="nav-item mb-2"><a href="https://www.logitech.com/pt-br" target="_blank" class="nav-link p-0 text-light dl-animation-footer ">Logitech</a></li>
+              </ul>
+            </center>
+          </div>
+
+          <div class="col mb-3">
+            <h6 class="text-secondary box">NAVEGAÇÃO</h6>
+            <center>
+              <ul class="nav flex-column col-5 align">
+                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-light dl-animation-footer">Home</a></li>
+                <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-light dl-animation-footer">Sobre</a></li>
+                <li class="nav-item mb-2"><a href="partners.html" class="nav-link p-0 text-light dl-animation-footer">Parceiros</a></li>
+                <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-light dl-animation-footer">Contato</a></li>
+              </ul>
+            </center>
+          </div>
+        </footer>
+      </div>
+    </div>
+<!-- FOOTER/FIM -->
+
+  </body>
+</html>
+
+<script>
+  const y = new Date();
+  let year = y.getFullYear();
+  document.getElementById("year").innerHTML = year;
+
+  const h = new Date();
+  let hora = h.getHours();
+  const date = new Date().toLocaleTimeString();
+
+  const d = new Date();
+  let dia = d.getDay();
+
+    if(dia > 0 && dia < 5){
+      if(hora >= 8 && hora <= 18){
+        document.getElementById("availability").innerHTML = "<d class='btn btn-success text-light'>● Online</d>";
+      }else{
+      document.getElementById("availability").innerHTML = "<d class='btn btn-danger text-light' title='Offline 😞'><d class='status'>●</d> Offline</d>";
+      }
+    }else{
+    document.getElementById("availability").innerHTML = "<d class='btn btn-danger text-light' title='Offline 😞'><d class='status'>●</d> Offline</d>";
+    }
+
+function check() {
+  document.getElementById("checkTermos").checked = true;
+}
+
+function numberCopy(){
+  var content = document.getElementById('number').innerHTML;
+  navigator.clipboard.writeText(content);
+  document.getElementById("numberText").innerHTML = "Número Copiado!"
+  const alertNumber = setTimeout(backNumber, 1500);
+}
+
+function backNumber() {
+  document.getElementById("numberText").innerHTML = "(13) 3477-2020"
+}
+
+function emailCopy(){
+  var content = document.getElementById('email').innerHTML;
+  navigator.clipboard.writeText(content);
+  document.getElementById("email").innerHTML = "E-mail Copiado!";
+  const alertNumber = setTimeout(backEmail, 1500);
+}
+
+function backEmail() {
+  document.getElementById("email").innerHTML = "dale.suporte@gmail.com";
+}
+
+$(document).ready(function (){
+    validate();
+    $('#name, #lastname, #emailInput, #subject, #question, #checkTermos').change(validate);
+});
+
+function validate(){
+    if ($('#name').val().length   >   0 &&
+    $('#lastname').val().length   >   0 &&
+    $('#emailInput').val().length   >   0 &&
+    $('#subject').val().length   >   0 &&
+    $('#question').val().length   >   0 &&
+    $('#checkTermos').val().checked   !=   false  ) {
+        $("input[type=submit]").prop("disabled", false);
+    }
+    else {
+        $("input[type=submit]").prop("disabled", true);
+    }
+}
+
+
+</script>
+
+<!-- Modal Termos -->
+<div class="modal fade" id="termos" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Termos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-justify">
+        <p><b>1.</b> Guardamos em nosso sistema os <u>apenas</u> os parâmetros:
+          <b><ul><li>Assunto</li>
+          <li>Mensagem</li></ul></b>
+        </p>
+
+        <hr>
+          
+        <p><b>2.</b> Demais informações:
+          <b><ul><li>Nome</li>
+          <li>Sobrenome</li>
+          <li>E-mail</li></ul></b>
+          &emsp;Não são salvos em nossos sistemas, apenas servem para o reenvio de resposta ao devido email com as informações pessoais.
+        </p>
+
+        <hr>
+
+        <p><b>3.</b> Para sua segurança, evite de enviar dados pessoais como nome, sobrenome e email no campo 
+          "<b>Mensagem</b>" ou "<b>Assunto</b>".
+ 
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary" onclick="check()" data-bs-dismiss="modal">Aceitar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Confirmação de Dados -->
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog" id="confirm" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-content" role="document">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirme suas informações</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Testando</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>Voltar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- FUNÇÃO QUE NÃO EXISTE MAIS DE ALERT PRA ABRIR UM ALERTA DE EMAIL/NUMERO COPIADO
+  function copyToClickBoard(){
+  var content = document.getElementById('tell').innerHTML;
+
+  navigator.clipboard.writeText(content)
+      .then(() => {
+        document.getElementById("notificationNumber").innerHTML = 
+        
+        document.getElementById("alertNumber").innerHTML =
+        "<div class='alert lert-primary alert-dismissible fade show bg-success text-light alertNumber' role='alert'><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button><b>Número Copiado</b></div>";
+  })
+      .catch(err => {
+      console.log('Something went wrong', err);
+  })
+
+}
+
+function copyToClickBoard_2(){
+  var content = document.getElementById('email').innerHTML;
+
+  navigator.clipboard.writeText(content)
+      .then(() => {
+        document.getElementById("notificationEmail").innerHTML = 
+        "<div class='alert lert-primary alert-dismissible fade show bg-success text-light' role='alert'><button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button><b>Número Copiado</b></div>";
+  })
+      .catch(err => {
+      console.log('Something went wrong', err);
+  })
+
+}
+-->
