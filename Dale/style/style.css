@@ -307,4 +307,182 @@
     transform: scale(1.1,1.1);
   }
 
+section.module.parallax{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 
+}
+
+section.module.parallax:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+}
+
+section.module.parallax-2{
+  background-image: url("https://lh3.google.com/u/0/d/178buj5MYreoekt2_6JXOABVmq68pwSOd=w2000-h3556-iv1");
+}
+
+.counter{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.item_1 {
+    transform: scale(1,1);
+	-webkit-animation: item_1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: item_1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.item_2 {
+    transform: scale(1,1);
+	-webkit-animation: item_1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: item_1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 0.2s;
+}
+
+.item_3 {
+    transform: scale(1,1);
+	-webkit-animation: item_1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: item_1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 0.4s;
+            
+}
+
+.item_4 {
+	-webkit-animation: item_1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: item_1 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 0.6s;
+
+}
+
+ @-webkit-keyframes item_1 {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes item_1 {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.title_border{
+    border-bottom: #1eaddb 5px solid;
+}
+
+.card_lider{
+    background-color: #fff;
+    color: #121212;
+    transform: scale(1,1);
+    transition: 0.2s ease;
+}
+
+.card_lider:hover{
+    background-color: #1eaddb;
+    color: #fff;
+    transform: scale(1.02,1.02);
+}
+
+
+.btn-github{
+    border: #fff 1px solid;
+    background-color: #1eaddb;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.btn-github:hover{
+    background-color: #fff;
+    color: #1eaddb;
+}
+
+#destaque_1{
+    transform: scale(1,1);
+    animation: zoomDestaque1 10s ease;
+    animation-iteration-count: infinite;
+}
+
+#destaque_2{
+    transform: scale(1,1);
+    animation: zoomDestaque2 10s ease;
+    animation-iteration-count: infinite;
+}
+
+#destaque_3{
+    transform: scale(1,1);
+    animation: zoomDestaque3 10s ease;
+    animation-iteration-count: infinite;
+}
+
+#destaque_4{
+    transform: scale(1,1);
+    animation: zoomDestaque4 10s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoomDestaque1{
+    0%{transform: scale(1,1);}
+    15%{transform: scale(1,1);}
+    20%{transform: scale(1.25,1.25);}
+    35%{transform: scale(1.25,1.25);}
+    40%{transform: scale(1,1);}
+    100%{transform: scale(1,1);}
+}
+
+@keyframes zoomDestaque2{
+    0%{transform: scale(1,1);}
+    35%{transform: scale(1,1);}
+    40%{transform: scale(1.25,1.25);}
+    55%{transform: scale(1.25,1.25);}
+    60%{transform: scale(1,1);}
+    100%{transform: scale(1,1);}
+}
+
+@keyframes zoomDestaque3{
+    0%{transform: scale(1,1);}
+    55%{transform: scale(1,1);}
+    60%{transform: scale(1.25,1.25);}
+    75%{transform: scale(1.25,1.25);}
+    80%{transform: scale(1,1);}
+    100%{transform: scale(1,1);}
+}
+
+@keyframes zoomDestaque4{
+    0%{transform: scale(1,1);}
+    75%{transform: scale(1,1);}
+    80%{transform: scale(1.25,1.25);}
+    95%{transform: scale(1.25,1.25);}
+    100%{transform: scale(1,1);}
+}
+
+.border_sobre{
+    border-right: 2px solid #1eaddb;
+}
